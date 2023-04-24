@@ -1,10 +1,10 @@
 package me.dio.creditrequestsystem.entity
 
 data class Customer(
-        val ir: Long? = null,
+        val id: Long? = null,
         var firstName: String = "",
         var lastName: String = "",
-        var cep: String = "",
+        var cpf: String = "",
         var email: String = "",
         var password: String = "",
         var address: Address = Address(),
