@@ -1,6 +1,10 @@
 package me.dio.creditrequestsystem.entity
 
+import jakarta.persistence.Column
+import jakarta.persistence.Embeddable
+
+@Embeddable
 data class Address (
-    var zipCode: String = "",
-    var streetName: String = ""
+        @Column(nullable = false) var zipCode: String = "",
+        @Column(nullable = false) var streetName: String = ""
 )
