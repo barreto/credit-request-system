@@ -4,8 +4,11 @@ spring:
     username: ${db_username}
     password: ${db_password}
   jpa:
+#      ddl-auto: create-drop
+    show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      properties:
+        hibernate.format_sql = true
   h2:
     console:
       enabled: true
