@@ -1,6 +1,7 @@
 package me.dio.creditrequestsystem.service.impl
 
 import me.dio.creditrequestsystem.entity.Customer
+import me.dio.creditrequestsystem.exception.BusinessException
 import me.dio.creditrequestsystem.repository.CustomerRepository
 import me.dio.creditrequestsystem.service.ICustomerService
 import org.springframework.stereotype.Service
@@ -11,7 +12,7 @@ class CustomerService(private val customerRepository: CustomerRepository) : ICus
 
     override fun findById(id: Long): Customer {
         return customerRepository.findById(id).orElseThrow {
-            RuntimeException("Id $id not found.")
+            BusinessException("Id $id not found.")
         }
     }
 
