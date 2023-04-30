@@ -17,8 +17,8 @@ data class CreditDto(
         val dayFirstOfInstallment: LocalDate,
 
         @field:NotNull
-        @Min(1, message = "Minimum number of installments must be one (in cash).")
-        @Max(48, message = "Maximum number of installments is 48.")
+        @field:Min(1, message = "Minimum number of installments must be 1.")
+        @field:Max(48, message = "Maximum number of installments is 48.")
         val numberOfInstallments: Int,
 
         @field:NotNull(message = "Invalid input")
