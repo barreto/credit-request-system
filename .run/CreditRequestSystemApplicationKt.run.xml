@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CreditRequestSystemApplicationKt" type="JetRunConfigurationType">
+    <envs>
+      <env name="db_password" value="&lt;your-password-here&gt;" />
+      <env name="db_username" value="&lt;your-username-here&gt;" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="me.dio.creditrequestsystem.CreditRequestSystemApplicationKt" />
+    <module name="credit-request-system.main" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
