@@ -1,4 +1,6 @@
-# Credit Request System
+<h1 align="center">Credit Request System API</h1>
+
+<p align="center">Rest API created for a fictitious lending company where the objective is to manage customers and credit requests.</p>
 
 ## References
 
